@@ -1,0 +1,765 @@
+/* Reset some basic elements for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+body {
+    font-family: Inter;
+    color: white;
+}
+
+
+
+header {
+    width: 100%;
+    background-color: #1f1f41;
+    height: 153px;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px 6px 15px rgba(0,0,0,0.25));
+}
+
+.nav-container {
+    max-width: 1440px;
+    min-width: 600px;
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+/* Logo styling */
+.logo {
+    
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    gap: 20px; /* Space between nav items */
+}
+
+nav .nav-item {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #555; /* Example hover effect */
+}
+
+/* Dropdown menu styling */
+nav .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444; /* Example dropdown background color */
+    min-width: 200px; /* Minimum width for dropdown */
+    z-index: 1;
+}
+
+nav .dropdown a {
+    padding: 10px;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+nav .dropdown a:hover {
+    background-color: #555; /* Example hover effect for dropdown items */
+}
+
+/* Icons styling */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between icons */
+}
+
+.icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Footer and main content styling */
+main .row {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0; /* Example background color */
+    margin: 10px 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 600px;
+    height: 540px;
+    background: radial-gradient(circle, #514E9E 0%, #1E1E49 100%);
+}
+
+.hero-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 600px;
+}
+
+.hero-container button {
+    position: absolute;
+    width: 339px;
+    height: 62px;
+    bottom: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .content {
+    background-color: #010027;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row1, .row2, .row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    box-sizing: border-box;
+    max-width: 1440px;
+    min-width: 600px;
+    margin: auto;
+  }
+
+  .row3 {
+    flex-direction: column;
+    
+  }
+
+  .upcoming-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(50% - 0px);
+    width: 455px;
+    padding-top: 20px;
+    color: white;
+    text-align: left;
+  }
+
+  #upcoming-skins {
+    margin-right: 217px;
+  }
+
+  .upcoming-card h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .date {
+    text-decoration: underline;
+    font-weight: normal;
+  }
+
+  .image {
+    width: 455px;
+    height: 258px;
+    margin-bottom: 10px;
+  }
+
+  .upcoming-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 455px; /* Ensure caption text does not exceed the width of the image */
+    word-wrap: break-word; /* Ensure text wraps within the container */
+  }
+
+  .bold-text {
+    font-weight: bold;
+  }
+
+  .countdown {
+    width: 1128px;
+    height: 213px;
+    border: 4px solid #9ab0ff;
+    background: linear-gradient(90deg, #1E1E49 0%, #514E9E 100%);
+    border-radius: 3px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .countdown p {
+    color: #fff;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .row3-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .spending-card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .spending-card {
+    width: 501px;
+    height: 502px;
+    border: 4px solid #9ab0ff;
+    background: linear-gradient(90deg, #1E1E49 0%, #514E9E 100%);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #lol {
+    border: 4px solid #14b4c5;
+    background: linear-gradient(90deg, #012137 0%, #018299 100%);
+    border-radius: 3px;
+    margin-right: 126px;
+  }
+
+  #lol img {
+    width: 219px;
+    height: 94px;
+  }
+
+  #valorant {
+    border: 4px solid #ff4545;
+    background: linear-gradient(90deg, #691818 0%, #1d0a0a 100%);
+    border-radius: 3px;
+  }
+
+  #valorant img {
+    width: 184px;
+    height: 125px;
+  }
+
+  .spending-card img {
+    /*width: 200px;
+    height: auto;*/
+    margin-bottom: 20px;
+  }
+
+  .spending-card p {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .spending-card a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 18px;
+  }
+
+footer {
+    padding-top: 20px;
+    height: 135px;
+    background-color: #1f1f41;
+    color: white;
+}
+
+/* Footer navigation styling */
+.footer-nav {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-column {
+    text-align: left;
+    line-height: 20px;
+}
+
+.footer-column h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-column a:hover {
+    color: #ccc; /* Example hover effect */
+}
+
+/* Follow us section styling */
+.follow-us {
+    
+}
+
+.follow-us p {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+
+/* BEGIN COSMETICS */
+.cosmetic-grid {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Gap between cards */
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .cosmetic-card {
+    position: relative;
+    width: 350px;
+    height: 511px;
+    border: 4px solid #ff4545;
+    border-radius: 10px;
+    background-color: #383A4E;
+  }
+  
+  .cosmetic-card img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .wishlist-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E9E9E9;
+    border: solid 2px #74cd49;
+    border-radius: 6px;
+    width: 302px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .wishlist-button.added {
+    border: solid 2px red;
+  }
+
+
+  /* END COSMETICS */
+
+  /* BUDGET */
+  /* #budget {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+  }
+  
+  #budget img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  #budget h1 {
+    font-size: 90px;
+    margin-top: 20px;
+  }
+  
+  #budget p {
+    font-size: 24px;
+    margin-top: 20px;
+  }*/
+
+  .game-header {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+  }
+
+  .game-header img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .game-header h1 {
+    font-size: 90px;
+    margin-top: 20px;
+  }
+  
+  .game-header p {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .dropdown-container {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 45px
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.dropdown-button:focus {
+    outline: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #444; /* Dark background for contrast */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 100px;
+    border: 1px solid #ccc;
+}
+
+.dropdown-container:hover .dropdown-menu,
+.dropdown-container:focus-within .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 8px 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.chevron {
+    margin-left: 10px;
+    transition: transform 0.2s;
+    color: white;
+}
+
+.dropdown-container:hover .chevron,
+.dropdown-container:focus-within .chevron {
+    transform: rotate(180deg);
+}
+
+  .progress-container {
+    position: relative;
+    width: 416px;
+    height: 416px;
+    margin: 20px auto;
+    border: solid;
+  }
+  
+  .progress-track,
+  .progress-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .progress-track {
+    background-color: #e9e9e9;
+  }
+  
+  .progress-progress {
+    background-color: #9ab0ff;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 50% calc(100% - 10px), 90% 50%, 50% 10px, 10% 50%);
+    animation: fill-progress 2s forwards; /* Adjust animation duration as needed */
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .progress-text span {
+    display: block;
+    font-size: 18px;
+  }
+
+  .set-budget-button {
+    width: 246px;
+    height: 62px;
+    background-color: #e9e9e9;
+    color: #383a4e;
+    border: none;
+    border-radius: 55px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px auto 0;
+    display: block;
+  }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 483px;
+  height: 393px;
+  background: linear-gradient(90deg, #1e1e49, #514e9e);
+  z-index: 9999;
+  padding: 20px;
+  border: solid 5px #5F6280;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.overlay h2 {
+  text-align: left;
+  margin: 30px auto auto 40px;
+  font: Lato;
+  font-size: 36px;
+}
+
+.overlay input[type="number"] {
+  width: calc(100% - 80px);
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: solid 2px #5F6280;
+  box-sizing: border-box;
+  margin: 30px 40px auto 40px;
+}
+
+.preset-buttons {
+  width: calc(100% - 80px);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.preset-button {
+  width: 20%; /* Four buttons with spacing */
+  height: 37px;
+  padding: 10px;
+  background-color: white;
+  color: #5f6280;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.confirm-button {
+  width: 201px;
+  height: 56px;
+  background-color: #e9e9e9;
+  color: #383a4e;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+.purchase-history {
+    padding-top: 60px;
+    padding-bottom: 124px;
+}
+
+  
+  .circular-progress {
+    --size: 250px;
+    --half-size: calc(var(--size) / 2);
+    --stroke-width: 12px;
+    --radius: calc((var(--size) - var(--stroke-width)) / 2);
+    --circumference: calc(var(--radius) * pi * 2);
+    --dash: calc((var(--progress) * var(--circumference)) / 100);
+    animation: progress-animation 5s linear 0s 1 forwards;
+  }
+  
+  .circular-progress circle {
+    cx: var(--half-size);
+    cy: var(--half-size);
+    r: var(--radius);
+    stroke-width: var(--stroke-width);
+    fill: none;
+    stroke-linecap: round;
+  }
+  
+  .circular-progress circle.bg {
+    stroke: #ddd;
+  }
+  
+  .circular-progress circle.fg {
+    transform: rotate(-90deg);
+    transform-origin: var(--half-size) var(--half-size);
+    stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+    transition: stroke-dasharray 0.3s linear 0s;
+    stroke: #5394fd;
+  }
+  
+  @property --progress {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+  }
+  
+  @keyframes progress-animation {
+    from {
+      --progress: 0;
+    }
+    to {
+      --progress: 50;
+    }
+  }
+
+  @keyframes fill-progress {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* BEGIN WISHLIST */
+
+.amounts-spent {
+    max-width: 1440px;
+    height: 300px;
+}
+
+.selected-cosmetics {
+    max-width: 1440px;
+    height: 300px;
+}
+
+  /* END WISHLIST */

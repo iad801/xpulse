@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+            <nav>
+                <div class="nav-item">
+                    <a href="cosmetics.html">COSMETICS</a>
+                    <div class="dropdown">
+                        <a href="#upcoming-skins">Upcoming Skins</a>
+                        <a href="#upcoming-bundles">Upcoming Bundle</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="budget.html">BUDGET</a>
+                    <div class="dropdown">
+                        <a href="#purchase-history">Purchase History</a>
+                        <a href="#total-spent">Total Spent</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="wishlist.html">WISHLIST</a>
+                    <div class="dropdown">
+                        <a href="#wishlist">Wishlist</a>
+                        <a href="#collection">Collection</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="icons">
+                <a href="#alerts" class="icon">
+                    <img src="images/alerts.png">
+                </a>
+                <a href="#profile" class="icon">
+                    <img src="images/profile.png">
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="content">
+
+            <div class="game-header">
+                <img src="images/lol-header.png">
+                <h1>WISHLIST</h1>
+                <p>View the total cost of your wishlisted skins and select skins to view individual prices.</p>
+            </div>
+
+            <div class="amounts-spent">
+                <img src="images/purchase-amounts.png">
+            </div>
+
+            <div class="cosmetic-grid" id="wishlist-grid">
+                <div class="cosmetic-card" data-category="events" data-sort="2024-06-10" data-release-date="2024-06-10" data-price="19.99">
+                    <img src="images/emyrean_akali_bgk.png" alt="Empyrean Akali">
+                    <button class="wishlist-button">Add to wishlist</button>
+                </div>
+                <div class="cosmetic-card" data-category="prestige" data-sort="2024-06-05" data-release-date="2024-06-05" data-price="24.99">
+                  <img src="images/spirit_blossom_thresh.png" alt="Cosmetic Image 2">
+                  <button class="wishlist-button">Add to wishlist</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+     <footer>
+        <div class="nav-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+            <div class="footer-nav">
+                <div class="footer-column">
+                    <h6>COSMETICS</h6>
+                    <a href="#league">League of Legends</a>
+                    <a href="#valorant">VALORANT</a>
+                </div>
+                <div class="footer-column">
+                    <h6>BUDGET</h6>
+                    <a href="#history">Purchase History</a>
+                </div>
+                <div class="footer-column">
+                    <h6>WISHLIST</h6>
+                    <a href="#total">Total RP Cost</a>
+                </div>
+            </div>
+            <div class="follow-us">
+                <p>FOLLOW US</p>
+                <div class="social-icons">
+                    <a href="https://discord.com/" class="icon">
+                        <img src="images/discord-logo.png" alt="discord">
+                    </a>
+                    <a href="https://x.com/?lang=en" class="icon">
+                        <img src="images/twitter-logo.png" alt="twitter">
+                    </a>
+                    <a href="https://www.instagram.com/" class="icon">
+                        <img src="images/instagram-logo.png" alt="instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/wishlist.js"></script>
+</body>
+</html>
