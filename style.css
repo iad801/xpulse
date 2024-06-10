@@ -126,10 +126,17 @@ nav a {
     font-size: 18px;
     padding: 10px 20px;
     display: block;
+    transition: color 0.3s ease;
+}
+
+nav a.active {
+  text-decoration: underline;
 }
 
 nav a:hover {
-    background-color: #555; /* Example hover effect */
+  color: red; /* Text color changes to red on hover */
+  background-color: transparent; /* Remove the existing background color change */
+
 }
 
 /* Dropdown menu styling */
