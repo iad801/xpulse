@@ -14,12 +14,23 @@ function handleWishlistButtonClick(button) {
             budgetAmount -= price;
             addItemToWishlist(button);
         } else {
-            alert("Insufficient budget amount!");
+            showCustomAlert();
             return;
         }
     }
 
     updateBudgetAmountInCookie(budgetAmount);
+}
+
+// Function to show custom alert popup
+function showCustomAlert() {
+    var alertPopup = document.getElementById('custom-alert');
+    alertPopup.classList.remove('hidden');
+
+    var okButton = document.getElementById('alert-ok-button');
+    okButton.addEventListener('click', function() {
+        alertPopup.classList.add('hidden');
+    });
 }
 
 // Function to add item to wishlist
